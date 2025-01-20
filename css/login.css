@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #555555); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 450px; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.login-logo img {
+    max-width: 70px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.login-box-msg {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.input-group .form-control {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.input-group .form-control:focus {
+    outline: none;
+    border-color: #131038;
+    box-shadow: 0 0 5px rgba(153, 184, 241, 0.5);
+}
+
+.input-group-append {
+    background-color: #131038;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.input-group-append .input-group-text {
+    color: white;
+}
+
+.input-group-append .input-group-text span {
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #131038;
+    color: #fff;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #131038;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-logo h1 {
+        font-size: 28px;
+    }
+
+    .login-logo img {
+        max-width: 50px;
+    }
+}
